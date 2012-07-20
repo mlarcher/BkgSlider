@@ -45,7 +45,7 @@ The script automatically adds an ending slash if necessary.
 
 The duration in milliseconds between two image changes.
 
-**Default** : 7000
+*Default* : 7000
 
 If you don’t want autoplay, set this value to 0.
 
@@ -53,21 +53,21 @@ If you don’t want autoplay, set this value to 0.
 
 The direction to go to when changing image.
 
-**Possible values** : ‘random’, ‘next’, ‘prev’
+*Possible values* : ‘random’, ‘next’, ‘prev’
 
-**Default** : ‘random’
+*Default* : ‘random’
 
 ### wrap
 
 Defines wheter or not to wrap around when reaching one end of the imges list.
 
-**Default** : true
+*Default* : true
 
 ### nav
 
 Defines the navigation tools.
 
-**Possible values** : true, an option as a string, an array of navigation tools in the order you want to see them
+*Possible values* : true, an option as a string, an array of navigation tools in the order you want to see them
 
 * true / ‘all’ : all the navigation tools
 * ‘list’ : list of shortcuts to each image
@@ -75,13 +75,13 @@ Defines the navigation tools.
 * ‘next’ : bbutton to go to the next image
 * ‘toggle’ : button to start or stop the slideshow
 
-**Default** : ['prev', 'list', 'next', 'toggle']
+*Default* : ['prev', 'list', 'next', 'toggle']
 
 ### stopOnNav
 
 Defines wheter or not to stop the slideshow when the user interacts with one of the navigation tools.
 
-**Default** : false
+*Default* : false
 
 ### width
 
@@ -89,7 +89,7 @@ The width to give to the image containers.
 
 With the ‘auto’ value, the script will use the width of the target element.
 
-**Default** : ‘auto’
+*Default* : ‘auto’
 
 ### height
 
@@ -97,27 +97,27 @@ The height to give to the image containers.
 
 With the ‘auto’ value, the script will use the height of the target element.
 
-**Default** : ‘auto’
+*Default* : ‘auto’
 
 ### containersClass
 
 Used to add a custom class to the image containers.
 
-**Default** : null
+*Default* : null
 
 ### effect
 
 The effect to apply when transitioning between two images.
 
-**Possible values** : ‘fadeOut’, ‘slideUp’, ‘hide’
+*Possible values* : ‘fadeOut’, ‘slideUp’, ‘hide’
 
-**Default** : ‘fadeOut’
+*Default* : ‘fadeOut’
 
 ### duration
 
 The transition duration between two images (in milliseconds)
 
-**Default** : 500
+*Default* : 500
 
 ### afterInit
 
@@ -133,7 +133,7 @@ Methods
 
 Move within the images list.
 
-**Possible values** : ‘next’, ‘prev’, ‘random’
+*Possible values* : ‘next’, ‘prev’, ‘random’
 
 If no parameter is passed, the direction set in the options is used.
 
