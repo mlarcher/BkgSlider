@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+<title>BkgSlide</title>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="css/bkgslide.css">
+<style type="text/css">
+#holder{
+    width:580px;
+    height:400px;
+    background:url('images/smoke.jpg');
+    margin:20px auto;
+    padding-top:20px;
+}
+</style>
+
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.bkgslide-1.0.4.js"></script>
+<script type="text/javascript">
+
+    var images = [ "smoke.jpg", "lion-fish.png", "field.jpg", "waterfall.jpg", "crop.jpg"];
+    var imgPath = 'images';
+
+    $(document).ready(function(){
+        $('#holder').bkgSlide({
+            images          : images,                       // list of images to use
+            imagePath       : imgPath,                      // path where to find the images
+            speed           : 2000,                         // time in milliseconds between two image changes, 0 to disable autoplay
+            direction       : 'random',                     // direction for autoplay ('random' / 'next' / 'prev')
+            wrap            : true,                         // whether or not to wrap when reaching one end of the images list
+            nav             : true,                         // whether ot not to setup navigation handlers
+                                                            // ( true or 'all' for all buttons
+                                                            // or an array with wanted options in the order you want them :
+                                                            // [ 'prev', 'list', 'next', 'toggle' ]
+                                                            // or a string with a single option )
+            stopOnNav       : true,                         // whether or not to stop autoplay when using the navigation handlers
+            width           : 'auto',                       // width of the background images containers ('auto' will get it from target)
+            height          : 400,                          // height of the background images containers ('auto' will get it from target)
+            containersClass : '',                           // class to add to the containers
+            effect          : 'fadeOut',                    // what kind of effect to use for transitions ('fadeOut' / 'slideUp' / 'hide')
+            duration        : 500,                          // duration of the transition
+            afterInit       : function(target, bkgSlider){} // callback function launched after initialization
+        });
+    });
+</script>
+
+</head>
+<body>
+
+<div id="holder">
+    With BkgSlide, you can have your text or any content here, while being able to navigate through the background images.
+</div>
+
+</body>
+</html>
