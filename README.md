@@ -16,7 +16,7 @@ Usage
 
 There’s nothing simpler than to use BkgSlide : you just have to include the jQery library and the BkgSlider plugin in your page and instanciate the plugin with its options.
 
-<pre>
+
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="jquery.bkgslide.js"> </script>
     <script type="text/javascript">
@@ -25,7 +25,7 @@ There’s nothing simpler than to use BkgSlide : you just have to include the jQ
             images: ['images/img1.jpg', 'images/img2.jpg']
         });
     });
-</pre>
+
 
 Options
 ------------
